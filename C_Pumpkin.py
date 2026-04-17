@@ -20,6 +20,13 @@ def plant_pumpkin(size):
         move_plant(1, East)
         move_plant(size - 1, South)
         move_plant(1, East)
+        
+def plant_pumpkin_reverse(size):
+    for i in range(size/2):
+        move_plant(size - 1, South)
+        move_plant(1, West)
+        move_plant(size - 1, North)
+        move_plant(1, West)
             
 def harvest_pumpkin():
     do_a_flip()
