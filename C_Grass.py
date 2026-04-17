@@ -1,5 +1,4 @@
-def move_harvest(n, dir):    
-
+def move_harvest(n, dir):   
     for i in range(n):
         if can_harvest():
             harvest()        
